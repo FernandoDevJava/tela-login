@@ -20,19 +20,19 @@ function App() {
             
             
             <div className="wrap-input">
-              <p>E-mail:</p>
+              <p><strong>Login:</strong></p>
               <input type="e-mail" /> 
             </div>
             <div className="wrap-input">            
-              <p>Senha:</p>
-            <input type={showResults ? "text" : "password"} maxlength="45"/>  
+              <p><strong>Senha:</strong></p>
+            <input type={showResults ? "text" : "password"} maxlength="38"/>  
                <div className="olho-icon">
                {showResults ? <ImEyeBlocked onClick={togglePasswordVisiblity}/> : <ImEye onClick={togglePasswordVisiblity}/>}
                 </div>             
             </div>
 
             <div className="container-login-form-btn">
-              <button className="login-form-btn">Entrar</button>
+              <button className="login-form-btn"><strong>Entrar</strong></button>
             </div>
 
             <div className="text-center"></div>
